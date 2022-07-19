@@ -13,13 +13,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MCCourseMod.Mod_ID);
 
     public static RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab( ModCreativeModTab.COURSE_TAB)));
 
     public static RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab( ModCreativeModTab.COURSE_TAB)));
 
     public static RegistryObject<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab( ModCreativeModTab.COURSE_TAB)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

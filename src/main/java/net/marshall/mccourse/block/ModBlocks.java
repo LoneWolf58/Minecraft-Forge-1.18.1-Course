@@ -1,6 +1,7 @@
 package net.marshall.mccourse.block;
 
 import net.marshall.mccourse.MCCourseMod;
+import net.marshall.mccourse.item.ModCreativeModTab;
 import net.marshall.mccourse.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,19 +23,19 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COBALT_BLOCK = registerBlock("cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModTab.COURSE_TAB);
 
     public static final RegistryObject<Block> COBALT_ORE = registerBlock("cobalt_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModTab.COURSE_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_COBALT_ORE = registerBlock("deepslate_cobalt_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModTab.COURSE_TAB);
 
     public static final RegistryObject<Block> RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(4.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(4.5f).requiresCorrectToolForDrops()), ModCreativeModTab.COURSE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                      CreativeModeTab tab){
